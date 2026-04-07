@@ -1,37 +1,10 @@
-/*
- * ============================================================
- *  SMART FAN CONTROLLER — ESP32 ACCESS POINT MODE
- *  Fixed version — stable WiFi AP + WebServer
- * ============================================================
- *
- *  HOW TO CONNECT (read this carefully):
- *  1. Power the ESP32
- *  2. On your phone/laptop: go to WiFi settings
- *  3. Connect to network:  SmartFan_ESP32
- *     Password:            12345678
- *  4. Open browser → type EXACTLY:  http://192.168.4.1
- *     (not https — must be http)
- *  5. On Android: when it asks "Stay connected even though
- *     no internet?" → tap YES / STAY CONNECTED
- *  6. On iPhone: tap the (i) next to the network →
- *     disable "Private Wi-Fi Address" if having issues
- *
- *  COMMON ISSUE FIX:
- *  - Phone shows connected but page won't load
- *    → Your phone switched to mobile data. Turn off mobile
- *      data temporarily, then try again.
- *  - Page loads once then stops updating
- *    → Keep the browser tab open and screen on
- * ============================================================
- */
-
 #include <WiFi.h>
 #include <WebServer.h>
 #include <DHT.h>
 #include <DNSServer.h>   // Captive portal — auto-opens browser
 
 // ── Access Point Config ──────────────────────────────────────
-const char* AP_SSID     = "SmartFan_ESP32";
+const char* AP_SSID     = "buleshthakur";
 const char* AP_PASSWORD = "12345678";        // min 8 chars
 
 // Fixed IP so it never changes — always 192.168.4.1
